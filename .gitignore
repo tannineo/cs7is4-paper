@@ -282,3 +282,6 @@ TSWLatexianTemp*
 
 # OSX temp file
 .DS_Store
+
+# compiled main.pdf
+main.pdf
