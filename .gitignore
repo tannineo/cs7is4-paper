@@ -285,3 +285,6 @@ TSWLatexianTemp*
 
 # compiled main.pdf
 main.pdf
+
+# other cited pdf files
+*.pdf
