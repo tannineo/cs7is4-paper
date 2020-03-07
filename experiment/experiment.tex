@@ -37,6 +37,13 @@ proof of concept.
 
 \subsubsection{Data Process and Analysis}
 
+\begin{figure}[h]
+  \centering
+  \caption{Sequence of actions in the experiment}
+  \label{pic:workflow}
+  \includegraphics[width=0.75\textwidth]{twitter_workflow}
+\end{figure}
+
 Once the data is gathered and saved in the CSV format, we then start processing
 the gathered data where we come up with a set of results to prove our
 hypothesis. Sentiment analysis can be broadly categorized into two kinds, based
@@ -55,9 +62,15 @@ The initial step was to make a sack of remarkable words. One significant
 perception that we went over was that not everyone of a kind word is significant
 for our handling. Thus, we focused on descriptive words which are profoundly
 educational of positive and negative assessments. The next steps that we took
-under processing our data were (1) Removing punctuation (2) Tokenizing (3)
-Removing stop words (4) Generating tuple and (5) Finally, extracting the
-adjectives.
+under processing our data were:
+
+\begin{itemize}
+  \item Removing punctuations
+  \item Tokenizing
+  \item Removing stop words
+  \item Generating tuples
+  \item Extracting the adjectives
+\end{itemize}
 
 The first step is to remove punctuation followed by Tokenizing which is the way
 toward separating a goliath string into a rundown of words. “NLTK”, a python
@@ -72,12 +85,5 @@ two sets of people to come up with a result that displayed whether the veterans
 were targeted to depression and suicidal.
 
 The sequence of actions can be refered to Figure \ref{pic:workflow}.
-
-\begin{figure}[h]
-  \centering
-  \caption{Sequence of actions in the experiment}
-  \label{pic:workflow}
-  \includegraphics[width=0.75\textwidth]{twitter_workflow}
-\end{figure}
 
 \subsection{Results}
