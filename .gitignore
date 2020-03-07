@@ -288,3 +288,6 @@ main.pdf
 
 # other cited pdf files
 *.pdf
+
+# office temp files
+~$*
