@@ -1,26 +1,32 @@
-\documentclass[a4paper,11pt]{article}
+\documentclass[american,a4paper,11pt]{article}
 
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{xpatch}
+\usepackage{csquotes}
 \usepackage{graphicx}  %%% for including graphics
+\graphicspath{{./images/}}
 \usepackage{url}       %%% for including URLs
 \usepackage{times}
-\usepackage{natbib}
 \usepackage[margin=25mm]{geometry}
 
 %%% custom packages
 \usepackage{booktabs}
 \usepackage{tabularx}
+
+\usepackage[authordate, backend=biber]{biblatex-chicago}
+\addbibresource{ref.bib}
 %%% custom packages
 
-\title{Sentiment Analysis on Veterans' Tweets - Comparison with Ordinary Users}
+\title{Sentiment Analysis on Soldiers' Tweets - Comparison with Ordinary Users (TBC)}
 \date{}
 
 \author{
-  Example Author\\
-  Affiliation\\
-  \texttt{example@email.org}
-  \and Chao Chen\\
-  Trinity College Dublin\\
-  \texttt{chenc1@tcd.ie}
+  Sumit Mukhija, Rachit Rastogi,\\
+  Chao Chen, Chen Wang, Chetan Prasad\\
+  School of Computer Science and Statistics, Trinity College Dublin\\
+  \texttt{mukhijas@tcd.ie}, \texttt{rrastogi@tcd.ie},\\
+  \texttt{chenc1@tcd.ie}, \texttt{wangc5@tcd.ie}, \texttt{cprasad@tcd.ie}
 }
 
 \begin{document}
@@ -39,7 +45,6 @@
 \input{conclusion/conclusion.tex}
 \input{futurework/futurework.tex}
 
-\bibliographystyle{chicago}
-\bibliography{ref}
+\printbibliography
 
 \end{document}
