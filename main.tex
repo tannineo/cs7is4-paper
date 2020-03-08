@@ -1,9 +1,7 @@
 \documentclass[english,a4paper,11pt]{article}
 
 \usepackage[utf8]{inputenc}
-\usepackage{babel}
-\usepackage{xpatch}
-\usepackage[autostyle=true]{csquotes}
+\usepackage{natbib}
 \usepackage{graphicx}  %%% for including graphics
 \graphicspath{{./images/}}
 \usepackage{url}       %%% for including URLs
@@ -13,12 +11,12 @@
 %%% custom packages
 \usepackage{booktabs}
 \usepackage{tabularx}
-
-\usepackage[authordate,backend=biber]{biblatex-chicago}
-\addbibresource{ref.bib}
+\usepackage{hyperref}
+\usepackage[autostyle=true]{csquotes}
+\usepackage{xpatch}
 %%% custom packages
 
-\title{Sentiment Analysis on Soldiers' Tweets - Comparison with civilians (TBC)}
+\title{Sentiment Analysis of Soldiers' Tweets - Comparison with civilians (TBC)}
 \date{\today}
 
 \author{
@@ -36,10 +34,10 @@
 
 \begin{abstract}
 The concern to veterans' mental health should be made. Existing works show that
-mental health changes caused by wars can be relected in linguistic features of
+mental health changes caused by wars can be reflected in linguistic features of
 the social media texts. In order to detect and compare those changes we collected
 data from 20 soldiers' tweets and examined them with a list of positive and negative
-adjectives to indentify the polarity and do comparison with normal users'
+adjectives to identify the polarity and do a comparison with normal users'
 tweets. The total counts of tweets vary from 57 to 39,000. We identified the
 difference between normal users and soldiers and we did a close look to the
 result with discussion.
@@ -54,6 +52,7 @@ result with discussion.
 \input{conclusion/conclusion.tex}
 \input{futurework/futurework.tex}
 
-\printbibliography
+\bibliographystyle{chicago}
+\bibliography{ref}
 
 \end{document}
